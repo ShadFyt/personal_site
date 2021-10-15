@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import MainNav from "./mainNav";
 import Header from "./header";
+import Footer from "./footer";
 
 
 class Main extends Component {
@@ -12,10 +13,15 @@ class Main extends Component {
     }
     render() {
         return (
-            <div className="container">
-                <MainNav />
+            <>
                 <Header />
-            </div>
+                <div className="container">
+                    <MainNav />
+                </div>
+                <Footer />
+
+            </>
+
         )
     }
 }

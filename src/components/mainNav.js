@@ -18,20 +18,29 @@ const MainNav = (props) => {
     return (
         <div>
             <Navbar color="light" light expand="md">
-                <NavbarBrand href="/">Ryan Doan</NavbarBrand>
+                <NavbarBrand href="#">RD</NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="mr-auto" navbar>
                         <NavItem>
-                            <NavLink href="#">About</NavLink>
+                            <NavLink href="#">Projects</NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink href="#">
-                                GitHub
+                                Resume
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink href="#">
+                                About
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink href="#">
+                                Contact
                             </NavLink>
                         </NavItem>
                     </Nav>
-                    <NavbarText>Simple Text</NavbarText>
                 </Collapse>
             </Navbar>
         </div>

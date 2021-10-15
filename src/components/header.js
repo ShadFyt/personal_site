@@ -1,17 +1,23 @@
 import React from 'react';
-import { Jumbotron } from 'reactstrap';
+import { Jumbotron, Container, Row, Col } from 'reactstrap';
 
 
 function Header() {
     return (
-        <header>
-            <Jumbotron style={{ backgroundColor: '#e8e8e8', borderColor: '#dbdad7', borderRadius: "10px" }}>
-                <h1 className="display-4 text-center mt-2">Ryan Doan</h1>
-                <p className="lead p-4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias qui natus eius praesentium repudiandae dicta earum recusandae, aliquid molestiae dolorum iusto repellat sed amet aspernatur in nesciunt ipsum labore architecto.
-                    Quibusdam quae, voluptatem vero eveniet, doloremque, inventore cum sed amet laborum veniam minima? Quisquam laudantium ducimus debitis distinctio similique qui! Est ab blanditiis odit?
-                </p>
+        <header className="p-2">
+            <Jumbotron fluid style={{ backgroundColor: '#e8e8e8', borderColor: '#dbdad7', borderRadius: "10px" }}>
+                <Row>
+                    <Col></Col>
+                    <Col>
+                        <h1 className="display-5 text-center mt-2">Ryan Doan</h1>
+                        <p className="lead p-2">
+                            Web Developer  <small class="text-muted">--  full-stack</small>
+                        </p>
+                        <p className="mx-5">Lorem ipsum dolor sit,cupiditate optio. Minus soluta perspiciatis et quos? Dolorem, numquam tenetur autem explicabo aspernatur quasi provident? Explicabo, sit.</p>
+                    </Col>
+                </Row>
             </Jumbotron>
+
         </header>
     )
 }
