@@ -7,7 +7,11 @@ function Header() {
         <header className="p-2">
             <Jumbotron fluid style={{ backgroundColor: '#e8e8e8', borderColor: '#dbdad7', borderRadius: "10px" }}>
                 <Row>
-                    <Col></Col>
+                    <Col className="my-auto">
+                        <div style={{ width: "auto", height: "200px" }}>
+                            <img src="/assets/images/headshot2.jpg" style={{ height: "100%", borderRadius: "50%" }} />
+                        </div>
+                    </Col>
                     <Col>
                         <h1 className="display-5 text-center mt-2">Ryan Doan</h1>
                         <p className="lead p-2">
